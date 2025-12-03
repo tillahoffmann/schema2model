@@ -1,5 +1,8 @@
 # schema2model
 
+[![CI](https://github.com/tillahoffmann/schema2model/actions/workflows/main.yml/badge.svg)](https://github.com/tillahoffmann/schema2model/actions/workflows/main.yml)
+[![PyPI](https://img.shields.io/pypi/v/schema2model)](https://pypi.org/project/schema2model/)
+
 Convert JSON Schema dictionaries to Pydantic models.
 
 ## Installation
