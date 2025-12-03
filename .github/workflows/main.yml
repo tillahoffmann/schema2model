@@ -22,13 +22,15 @@ jobs:
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
+      - name: Remove python version file
+        run: rm .python-version
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install project
         run: |
-          uv sync --all-groups --python ${{ matrix.python-version }}
+          uv sync --all-groups
           uv pip install -e .
       - name: Run the tests
         run: uv run pytest -v
