@@ -22,7 +22,7 @@ from examples.user import User
 from examples.uuid_model import Entity
 from pydantic import BaseModel
 
-from jsonschema2pydantic import schema2model
+from schema2model import schema2model
 
 
 @pytest.mark.parametrize(

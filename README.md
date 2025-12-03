@@ -1,17 +1,17 @@
-# jsonschema2pydantic
+# schema2model
 
 Convert JSON Schema dictionaries to Pydantic models.
 
 ## Installation
 
 ```bash
-pip install jsonschema2pydantic
+pip install schema2model
 ```
 
 ## Usage
 
 ```python
-from jsonschema2pydantic import schema2model
+from schema2model import schema2model
 
 schema = {
     "title": "User",
