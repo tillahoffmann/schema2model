@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install project
-        run: uv sync --all-groups && uv pip install -e .
+        run: uv sync --all-groups --python ${{ matrix.python-version }} && uv pip install -e .
       - name: Run the tests
         run: uv run pytest -v
 
